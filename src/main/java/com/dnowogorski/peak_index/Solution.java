@@ -1,5 +1,8 @@
 package com.dnowogorski.peak_index;
 
+/**
+ * https://leetcode.com/problems/peak-index-in-a-mountain-array/
+ */
 public class Solution {
 
     public int peakIndexInMountainArray(int[] input) {
