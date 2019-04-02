@@ -15,4 +15,14 @@ class SolutionSpec extends Specification {
         A << [[0, 1, 0], [0, 2, 1, 0], [0, 1, 2, 3, 10, 4]]
         result << [1, 1, 4]
     }
+
+    @Unroll
+    def "should recursively find peek index in mountain array"() {
+        expect:
+        solution.peakIndexInMountainArrayRecursive(A as int[]) == result
+
+        where:
+        A << [[0, 1, 0], [0, 2, 1, 0], [0, 1, 2, 3, 10, 4]]
+        result << [1, 1, 4]
+    }
 }
