@@ -12,7 +12,7 @@ class SolutionSpec extends Specification {
         solution.peakIndexInMountainArray(A as int[]) == result
 
         where:
-        A << [[0, 1, 0], [0, 2, 1, 0]]
-        result << [1, 1]
+        A << [[0, 1, 0], [0, 2, 1, 0], [0, 1, 2, 3, 10, 4]]
+        result << [1, 1, 4]
     }
 }
