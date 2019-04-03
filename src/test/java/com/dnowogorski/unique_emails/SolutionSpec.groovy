@@ -12,7 +12,8 @@ class SolutionSpec extends Specification {
         solution.numUniqueEmails(A as String[]) == result
 
         where:
-        A << [["test.email+alex@leetcode.com","test.e.mail+bob.cathy@leetcode.com","testemail+david@lee.tcode.com"]]
-        result << [2]
+        A << [["test.email+alex@leetcode.com", "test.e.mail+bob.cathy@leetcode.com", "testemail+david@lee.tcode.com"],
+              ["testemail@leetcode.com", "testemail1@leetcode.com", "testemail+david@lee.tcode.com"]]
+        result << [2, 3]
     }
 }
