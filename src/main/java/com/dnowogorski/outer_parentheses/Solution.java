@@ -3,6 +3,9 @@ package com.dnowogorski.outer_parentheses;
 import java.util.ArrayDeque;
 import java.util.Deque;
 
+/**
+ * https://leetcode.com/problems/remove-outermost-parentheses
+ */
 public class Solution {
     public String removeOuterParentheses(String input) {
         Deque<Character> stack = new ArrayDeque<>();
